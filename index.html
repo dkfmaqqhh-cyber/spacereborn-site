@@ -7,12 +7,22 @@
 <meta property="og:title" content="오늘의 철거 | 철거·원상복구·폐업지원금·인테리어 상담">
 <meta property="og:description" content="상가·사무실·주택 철거와 원상복구, 폐업지원금 안내, 인테리어 상담까지 한 번에. 오늘의 철거에서 무료 방문견적과 빠른 상담을 받아보세요.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://spacereborn.netlify.app/">
+<meta property="og:url" content="https://dkfmaqghh-cyber.github.io/spacereborn-site/">
+<meta property="og:site_name" content="오늘의 철거">
+<meta property="og:image" content="https://dkfmaqghh-cyber.github.io/spacereborn-site/images/hero_main_new.png?v=final">
+<meta property="og:image:alt" content="오늘의 철거 메인 이미지">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="오늘의 철거 | 철거·원상복구·폐업지원금·인테리어 상담">
+<meta name="twitter:description" content="상가·사무실·주택 철거와 원상복구, 폐업지원금 안내, 인테리어 상담까지 한 번에. 오늘의 철거에서 무료 방문견적과 빠른 상담을 받아보세요.">
+<meta name="twitter:image" content="https://dkfmaqghh-cyber.github.io/spacereborn-site/images/hero_main_new.png?v=final">
+<link rel="canonical" href="https://dkfmaqghh-cyber.github.io/spacereborn-site/">
 <meta name="description" content="오늘의 철거는 상가·사무실·주택 철거와 원상복구, 폐업지원금 안내, 인테리어 상담을 함께 진행하는 공간 전문 브랜드입니다. 무료 방문견적과 빠른 상담을 제공합니다.">
 <meta name="naver-site-verification" content="c0eb416c7d21fceeb3aeef103cfd4a839de77fd0" />
 <style>
 :root{--yellow:#f8bd00;--dark:#11161d;--navy:#102235;--muted:#68717d;--line:#e8eaed;--bg:#f7f8fa;}
-*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,'Noto Sans KR',sans-serif;color:#111;background:#fff}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,'Noto Sans KR',sans-serif;color:#111;background:#fff;word-break:keep-all;overflow-x:hidden}
 a{color:inherit;text-decoration:none} button,input,select{font:inherit}
 .wrap{width:min(1180px,92%);margin:auto}
 header{height:72px;display:flex;align-items:center;border-bottom:1px solid #eee;position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);z-index:50}
@@ -73,7 +83,7 @@ nav{display:flex;gap:42px;font-weight:800} nav a.active{border-bottom:3px solid 
 .page-hero h1,.page-hero h2{font-size:54px;margin:14px 0 14px} .page-hero p{font-size:20px;line-height:1.7;max-width:700px}
 .about-hero{background:linear-gradient(90deg,rgba(17,24,32,.96) 0%,rgba(17,24,32,.88) 34%,rgba(17,24,32,.48) 60%,rgba(17,24,32,.18) 82%),url('images/about_hero_new.png') 78% center/cover no-repeat}
 .cases-hero{padding:0;position:relative;overflow:hidden;min-height:620px;background:none}
-.cases-hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 68%;display:block}
+.cases-hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center;display:block}
 .cases-hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,19,31,.88) 0%,rgba(9,19,31,.72) 34%,rgba(9,19,31,.24) 68%,rgba(9,19,31,0) 100%)}
 .cases-hero-copy{position:absolute;left:6%;bottom:12%;z-index:2;max-width:560px;color:#fff}
 .filter-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px}
@@ -100,14 +110,30 @@ footer{padding:26px 0;border-top:1px solid #eee;color:#777;font-size:13px}
 }
 @media(max-width:820px){
  nav,.header-cta,.header-contact-actions{display:none} .menu-btn{display:block} .mobile-menu.open{display:block} .mobile-quick-actions{display:flex}
- .hero{min-height:560px} .hero h1{font-size:42px} .hero p{font-size:17px}
+ .header-inner{width:calc(100% - 30px)}
+ .logo{font-size:20px;gap:8px}
+ .logo-mark{width:34px;height:34px}
+ .logo small{font-size:8px;letter-spacing:2.5px}
+ .hero{min-height:530px;align-items:flex-start;padding:44px 0 28px;background-position:72% center}
+ .hero h1{font-size:40px;line-height:1.12;margin:18px 0 14px;max-width:340px;word-break:keep-all}
+ .hero p{font-size:16px;line-height:1.65;max-width:310px;word-break:keep-all}
+ .hero-actions{margin-top:20px;gap:10px}
+ .hero-actions .btn{min-height:52px;padding:0 20px;font-size:15px;border-radius:12px}
+ .feature-strip{margin-top:-18px}
  .feature-grid,.value-grid,.cards,.reason-grid,.metrics{grid-template-columns:1fr 1fr}
  .feature{border-right:0;border-bottom:1px solid #eee} .split,.support-teaser,.form-layout{grid-template-columns:1fr}
  .review-card{min-width:85%} .page-hero h1,.page-hero h2{font-size:42px} .section{padding:60px 0}
 }
 @media(max-width:520px){
- .hero h1{font-size:36px} .feature-grid,.value-grid,.cards,.reason-grid,.metrics,.form-grid{grid-template-columns:1fr}
- .hero-actions{flex-direction:column;align-items:flex-start} .section-title{font-size:32px} .footer-row{flex-direction:column;align-items:flex-start}
+ .hero{min-height:500px;padding:36px 0 24px;background-position:70% center}
+ .hero .eyebrow{font-size:12px;letter-spacing:4px}
+ .hero h1{font-size:34px!important;max-width:300px}
+ .hero p{font-size:15px!important;max-width:280px}
+ .hero-actions{flex-direction:column;align-items:flex-start}
+ .hero-actions .btn{min-height:48px;padding:0 18px;font-size:14px}
+ .feature-strip{margin-top:-8px}
+ .feature-grid,.value-grid,.cards,.reason-grid,.metrics,.form-grid{grid-template-columns:1fr}
+ .section-title{font-size:32px} .footer-row{flex-direction:column;align-items:flex-start}
  #page-support .metrics{gap:12px;margin-top:24px}
  #page-support .metric{min-height:100px;padding:20px 16px;border-radius:14px}
  #page-support .metric small{font-size:14px;margin-bottom:7px}
@@ -461,9 +487,10 @@ padding:6px 10px;border-radius:7px;font-size:11px;font-weight:900;letter-spacing
 
 @media(max-width:390px){
   .wrap,.header-inner{width:calc(100% - 26px)}
-  .hero{min-height:480px;background-position:64% center}
-  .hero h1{font-size:31px!important}
-  .hero p{font-size:14px!important}
+  .hero{min-height:470px;background-position:68% center;padding:32px 0 22px}
+  .hero h1{font-size:30px!important;max-width:270px}
+  .hero p{font-size:14px!important;max-width:250px}
+  .hero-actions .btn{min-height:46px;padding:0 16px;font-size:13px}
   .feature-grid{padding:9px}
   .feature{padding:14px 5px!important}
   .section-title{font-size:28px!important}
@@ -569,6 +596,10 @@ padding:6px 10px;border-radius:7px;font-size:11px;font-weight:900;letter-spacing
   }
 }
 
+
+@media(max-width:820px){
+  .cases-hero-image{transform:scale(1.28);transform-origin:center bottom;object-position:center bottom}
+}
 </style>
 </head>
 <body>
@@ -832,7 +863,7 @@ padding:6px 10px;border-radius:7px;font-size:11px;font-weight:900;letter-spacing
 
 <section id="page-cases" class="page">
   <section class="page-hero cases-hero">
-    <img class="cases-hero-image" src="images/img_14_8f950baa6fd4.jpg" alt="시공사례 메인 이미지">
+    <img class="cases-hero-image" src="images/img_19_b8b9f0c9d7cd.jpg" alt="시공사례 메인 이미지">
     <div class="cases-hero-overlay"></div>
     <div class="cases-hero-copy">
       <div style="font-size:14px;font-weight:800;letter-spacing:4px;margin-bottom:14px;">PORTFOLIO</div>
@@ -1074,19 +1105,19 @@ padding:6px 10px;border-radius:7px;font-size:11px;font-weight:900;letter-spacing
               <div class="support-step-list">
                 <div class="support-step">
                   <div class="support-step-num">1</div>
-                  <div><b>기본 정보 전달</b><span>업종, 지역, 평수 등 기본 정보를 네이버폼 또는 채팅으로 전달합니다.</span></div>
+                  <div><b>기본 정보 전달</b><span>업종, 지역, 평수 등 기본 정보를<br>네이버폼 또는 채팅으로 전달합니다.</span></div>
                 </div>
                 <div class="support-step">
                   <div class="support-step-num">2</div>
-                  <div><b>현장 내용 확인</b><span>현재 내부 상태와 원상복구 범위, 필요한 작업 내용을 함께 확인합니다.</span></div>
+                  <div><b>현장 내용 확인</b><span>현재 내부 상태와 원상복구 범위,<br>필요한 작업 내용을 함께 확인합니다.</span></div>
                 </div>
                 <div class="support-step">
                   <div class="support-step-num">3</div>
-                  <div><b>실시간 상담 진행</b><span>접수 내용을 바탕으로 공사 범위와 진행 방향을 빠르게 상담해 드립니다.</span></div>
+                  <div><b>실시간 상담 진행</b><span>접수 내용을 바탕으로 공사 범위와<br>진행 방향을 빠르게 상담해 드립니다.</span></div>
                 </div>
                 <div class="support-step">
                   <div class="support-step-num">4</div>
-                  <div><b>방문 견적 안내</b><span>필요한 경우 현장 방문 일정을 안내하고 구체적인 견적을 도와드립니다.</span></div>
+                  <div><b>방문 견적 안내</b><span>필요한 경우 현장 방문 일정을 안내하고<br>구체적인 견적을 도와드립니다.</span></div>
                 </div>
               </div>
             </div>
