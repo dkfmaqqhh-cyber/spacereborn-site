@@ -538,7 +538,7 @@ padding:6px 10px;border-radius:7px;font-size:11px;font-weight:900;letter-spacing
 .site-footer .footer-copy{color:#9ea5ae;font-size:12px;line-height:1.7;text-align:right;}
 .site-footer .footer-phone{display:block;margin-top:6px;color:#fff;font-size:14px;font-weight:800;}
 .site-footer .visitor-counter{margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,.08);text-align:center;}
-.site-footer .visitor-counter img{height:20px;vertical-align:middle;}
+.site-footer .visitor-counter img{height:20px;vertical-align:middle;margin:0 4px;}
 .mobile-call-fab{position:fixed;right:18px;bottom:18px;z-index:60;display:none;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 18px;border-radius:999px;background:#111;color:#fff;font-weight:900;font-size:14px;box-shadow:0 10px 26px rgba(0,0,0,.24);border:1px solid rgba(255,255,255,.12);}
 @media(max-width:820px){
   .site-footer .footer-row{grid-template-columns:1fr;gap:18px;align-items:start;}
@@ -1169,8 +1169,18 @@ padding:6px 10px;border-radius:7px;font-size:11px;font-weight:900;letter-spacing
     </div>
   </div>
   <div class="wrap visitor-counter">
-    <img src="https://hits.sh/onulcheolgeo.kr.svg?view=today-total&amp;label=%EC%98%A4%EB%8A%98%20%2F%20%EC%B4%9D%20%EB%B0%A9%EB%AC%B8%EC%9E%90&amp;color=f8bd00&amp;labelColor=2a313b&amp;style=flat-square" alt="오늘 방문자 / 총 방문자 수" loading="lazy">
+    <img src="https://hits.sh/onulcheolgeo.kr.svg?view=total&amp;label=%EC%B4%9D%20%EB%B0%A9%EB%AC%B8%EC%9E%90&amp;color=f8bd00&amp;labelColor=2a313b&amp;style=flat-square" alt="총 방문자 수">
+    <img id="today-visitors" alt="오늘 방문자 수" hidden>
   </div>
+  <script>
+  (function(){
+    // 오늘 방문자: 한국 시간(KST) 날짜별 카운터 → 매일 자정(KST)에 0부터 새로 셈
+    var d=new Date(Date.now()+9*3600*1000).toISOString().slice(0,10);
+    var img=document.getElementById('today-visitors');
+    img.src='https://hits.sh/onulcheolgeo.kr/today/'+d+'.svg?view=total&label=%EC%98%A4%EB%8A%98%20%EB%B0%A9%EB%AC%B8%EC%9E%90&color=f8bd00&labelColor=2a313b&style=flat-square';
+    img.hidden=false;
+  })();
+  </script>
 </footer>
 <a class="mobile-call-fab" href="tel:01079902378" aria-label="오늘의 철거 전화 상담">☎ 전화 상담</a>
 <script>
