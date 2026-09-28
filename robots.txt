@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://spacereborn.netlify.app/sitemap.xml
+Sitemap: https://onulcheolgeo.kr/sitemap.xml
