@@ -571,6 +571,11 @@ padding:6px 10px;border-radius:7px;font-size:11px;font-weight:900;letter-spacing
 .site-footer .footer-contact{display:flex;flex-wrap:wrap;gap:10px;}
 .site-footer .footer-contact a{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:10px 14px;border-radius:10px;font-weight:800;font-size:13px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.06);}
 .site-footer .footer-contact a.primary{background:var(--yellow);border-color:var(--yellow);color:#111;}
+/* 하단 상담 버튼 색상: 전화(빨강) · 카카오(카카오 노랑) · 무료 견적(네이버폼 초록) */
+.site-footer .footer-contact a[href^="tel:"]{background:#e53935;border-color:#e53935;color:#fff;}
+.site-footer .footer-contact a[href*="open.kakao.com"]{background:#fee500;border-color:#fee500;color:#191919;}
+.site-footer .footer-contact a[href*="naver.me"]{background:#03c75a;border-color:#03c75a;color:#fff;}
+.site-footer .footer-contact a:hover{filter:brightness(1.06);}
 .site-footer .footer-copy{color:#9ea5ae;font-size:12px;line-height:1.7;text-align:right;}
 .site-footer .footer-phone{display:block;margin-top:6px;color:#fff;font-size:14px;font-weight:800;}
 .site-footer .visitor-counter{margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,.08);text-align:center;}
