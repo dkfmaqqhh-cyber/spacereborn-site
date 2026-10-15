@@ -645,6 +645,15 @@ padding:6px 10px;border-radius:7px;font-size:11px;font-weight:900;letter-spacing
 @media(max-width:820px){
   .cases-hero-image{transform:scale(1.28);transform-origin:center bottom;object-position:center bottom}
 }
+
+/* 64차 수정: 모바일 하단 고정 버튼 2개(전화 상담 + 방문견적 신청) */
+.mobile-fab-group{display:none}
+@media(max-width:820px){
+  .mobile-fab-group{position:fixed;left:14px;right:14px;bottom:calc(14px + env(safe-area-inset-bottom));z-index:60;display:flex;gap:10px}
+  .mobile-fab-group .mobile-call-fab,.mobile-fab-group .mobile-quote-fab{position:static;flex:1;display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 12px;border-radius:999px;font-weight:900;font-size:15px;box-shadow:0 10px 26px rgba(0,0,0,.22);white-space:nowrap}
+  .mobile-fab-group .mobile-quote-fab{background:var(--yellow);color:#111;border:1px solid var(--yellow)}
+  body{padding-bottom:84px}
+}
 </style>
 </head>
 <body>
@@ -1225,7 +1234,10 @@ padding:6px 10px;border-radius:7px;font-size:11px;font-weight:900;letter-spacing
   })();
   </script>
 </footer>
-<a class="mobile-call-fab" href="tel:01079902378" aria-label="오늘의 철거 전화 상담">☎ 전화 상담</a>
+<div class="mobile-fab-group">
+  <a class="mobile-call-fab" href="tel:01079902378" aria-label="오늘의 철거 전화 상담">☎ 전화 상담</a>
+  <a class="mobile-quote-fab" href="https://naver.me/551kJA6x" target="_blank" rel="noopener noreferrer" aria-label="무료 방문견적 신청">방문견적 신청</a>
+</div>
 <script>
 const pages = ['home','about','cases','interior','support','demolition'];
 function route(){
