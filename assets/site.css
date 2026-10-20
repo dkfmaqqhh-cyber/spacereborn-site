@@ -613,7 +613,12 @@ padding:6px 10px;border-radius:7px;font-size:11px;font-weight:900;letter-spacing
 .area-chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:7px}
 .area-chips li{padding:6px 11px;border-radius:999px;background:var(--bg);font-size:13px;font-weight:700;color:#333}
 .area-works{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.area-works div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 20px;text-align:center}
+.area-work{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;text-align:center;display:flex;flex-direction:column;box-shadow:0 10px 26px rgba(17,22,29,.06);transition:transform .2s ease,box-shadow .2s ease}
+.area-work:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(17,22,29,.12)}
+.area-work-img{aspect-ratio:4/3;max-width:100%;background:var(--bg);border-bottom:3px solid var(--yellow)}
+.area-work-body{padding:20px 18px 22px}
+@media(prefers-reduced-motion:reduce){.area-work,.area-work:hover{transition:none;transform:none}}
+@media(max-width:560px){.area-work-img{aspect-ratio:16/9}.area-work-body{padding:16px 16px 18px}}
 .area-works b{display:block;font-size:17px;margin-bottom:8px}
 .area-works span{display:block;color:var(--muted);font-size:14px;line-height:1.6}
 .area-faq{max-width:820px;margin:0 auto;display:grid;gap:12px}
