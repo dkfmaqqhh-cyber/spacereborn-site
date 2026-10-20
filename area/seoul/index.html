@@ -245,10 +245,10 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdro
   <div class="header-inner">
     <a class="logo" href="/" aria-label="오늘의 철거 홈"><span class="logo-mark" aria-hidden="true"></span><span>오늘의 철거<small>SPACE REBORN</small></span></a>
     <nav class="top-nav" aria-label="주요 메뉴">
-      <a href="/#about">오늘의 철거소개</a>
+      <a href="/about/">오늘의 철거소개</a>
       <a href="/support/">폐업지원금</a>
       <a href="/cases/">시공사례</a>
-      <a href="/#interior">인테리어</a>
+      <a href="/interior/">인테리어</a>
       <a href="/area/" aria-current="page">지역별 철거</a>
     </nav>
     <div class="top-call">
@@ -287,7 +287,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdro
           <div><dt>사후</dt><dd>시공 후 1년 무상 A/S로 마무리까지 책임집니다.</dd></div>
         </dl>
       </div>
-      <p class="updated">최종 업데이트 2026-10-15 · 작성 오늘의 철거</p>
+      <p class="updated">최종 업데이트 2026-10-20 · 작성 오늘의 철거</p>
       <nav class="jump" aria-label="이 페이지 바로가기">
         <a href="#why">오늘의 철거 기준</a><a href="#quote">견적 순서</a><a href="#cost">비용</a><a href="#situation">상황별 안내</a><a href="#reviews">후기</a><a href="#cases">시공사례</a><a href="#services">서비스</a><a href="#districts">서울 지역</a><a href="#faq">FAQ</a>
       </nav>
@@ -453,7 +453,8 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdro
       </ul>
       <p class="search-msg" id="gu-msg" aria-live="polite"></p>
       <div class="near">
-        <a class="btn btn-outline" href="/area/">경기 · 인천 철거 보기</a>
+        <a class="btn btn-outline" href="/area/gyeonggi/">경기 철거 보기</a>
+        <a class="btn btn-outline" href="/area/incheon/">인천 철거 보기</a>
         <a class="btn btn-outline" href="/area/">전국 지역별 철거 보기</a>
       </div>
     </div>
@@ -492,7 +493,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdro
   <div class="wrap">
     <strong>오늘의 철거</strong>
     <div class="foot-links">
-      <a href="/">홈</a><a href="/#about">오늘의 철거소개</a><a href="/support/">폐업지원금</a><a href="/cases/">시공사례</a><a href="/#interior">인테리어</a><a href="/area/">지역별 철거</a><a href="/area/seoul/">서울 철거</a>
+      <a href="/">홈</a><a href="/about/">오늘의 철거소개</a><a href="/support/">폐업지원금</a><a href="/cases/">시공사례</a><a href="/interior/">인테리어</a><a href="/area/">지역별 철거</a><a href="/area/seoul/">서울 철거</a><a href="/area/gyeonggi/">경기 철거</a><a href="/area/incheon/">인천 철거</a>
     </div>
     <address style="font-style:normal">주소 (02580) 서울특별시 동대문구 왕산로 25 (신설동 89-79) 빌딩</address>
     <div><a href="tel:01079902378" aria-label="오늘의 철거 전화 상담" style="color:#fff;font-weight:800">☎ 전화 상담</a> · © 2026 오늘의 철거. All rights reserved.</div>
@@ -515,10 +516,12 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdro
     t.addEventListener('keydown',function(e){var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(d){var n=tabs[(i+d+tabs.length)%tabs.length];select(n);n.focus();}});
   });
   var input=document.getElementById('gu-search'),items=[].slice.call(document.querySelectorAll('#gu-list li')),msg=document.getElementById('gu-msg');
+  var alias={};
   input.addEventListener('input',function(){
-    var q=input.value.trim().replace(/\s/g,''),hits=0;
-    items.forEach(function(li){var h=q&&li.textContent.indexOf(q)>-1;li.classList.toggle('hit',!!h);if(h)hits++;});
-    msg.textContent=!q?'':hits?q+' 지역도 상담할 수 있습니다. 평수와 현장 사진을 보내주세요.':'목록에 없는 이름입니다. 동 이름이라면 해당 구로 상담하시면 됩니다.';
+    var q=input.value.trim().replace(/\s/g,''),hits=[];
+    var targets=[];Object.keys(alias).forEach(function(k){if(q&&(k.indexOf(q)>-1||q.indexOf(k)>-1))targets=targets.concat(alias[k]);});
+    items.forEach(function(li){var t=li.textContent,h=!!q&&(t.indexOf(q)>-1||targets.indexOf(t)>-1);li.classList.toggle('hit',h);if(h)hits.push(t);});
+    msg.textContent=!q?'':hits.length?hits.join(', ')+' 지역 상담이 가능합니다. 평수와 현장 사진을 보내주세요.':'목록에서 찾지 못했습니다. 동 이름이라면 해당 구로 상담하시면 됩니다.';
   });
 })();
 </script>

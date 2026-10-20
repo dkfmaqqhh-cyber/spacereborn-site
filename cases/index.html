@@ -49,10 +49,10 @@
       <span>오늘의 철거<small>SPACE REBORN</small></span>
     </a>
     <nav>
-      <a href="/#about">오늘의 철거소개</a>
+      <a href="/about/">오늘의 철거소개</a>
       <a href="/support/">폐업지원금</a>
       <a href="/cases/" class="active" aria-current="page">시공사례</a>
-      <a href="/#interior">인테리어</a>
+      <a href="/interior/">인테리어</a>
       <a href="/area/">지역별 철거</a>
     </nav>
     <div class="header-contact-actions">
@@ -65,10 +65,10 @@
         <a class="primary" href="tel:01079902378">전화 상담</a>
         <a class="dark" href="https://open.kakao.com/o/gXQOaEOi" target="_blank" rel="noopener noreferrer">카카오 상담</a>
       </div>
-      <a href="/#about">오늘의 철거소개</a>
+      <a href="/about/">오늘의 철거소개</a>
       <a href="/support/">폐업지원금</a>
       <a href="/cases/">시공사례</a>
-      <a href="/#interior">인테리어</a>
+      <a href="/interior/">인테리어</a>
       <a href="/area/">지역별 철거</a>
     </div>
   </div>
@@ -90,30 +90,30 @@
   <section class="section">
     <div class="wrap">
       <div class="filter-row">
-        <button class="filter active">전체</button><button class="filter">상가/매장</button><button class="filter">사무실</button><button class="filter">아파트/주택</button><button class="filter">기타</button>
+        <button class="filter active" data-filter="all" aria-pressed="true">전체</button><button class="filter" data-filter="store" aria-pressed="false">상가/매장</button><button class="filter" data-filter="office" aria-pressed="false">사무실</button><button class="filter" data-filter="home" aria-pressed="false">아파트/주택</button><button class="filter" data-filter="etc" aria-pressed="false">기타</button>
       </div>
-      <div class="cards"><div class="case-card">
+      <div class="cards"><div class="case-card" data-cat="store">
           <div class="case-pair">
             <div class="half has-img"><img src="/images/img_05_63ae4c007a36.jpg" alt="샌드위치 프랜차이즈 매장 철거 전 외관" loading="lazy" decoding="async"></div>
             <div class="half has-img"><img src="/images/img_06_69e11a3e72fb.jpg" alt="매장 철거 후 비워진 상가 외관" loading="lazy" decoding="async"></div>
           </div>
           <div class="case-body"><span class="tag">프랜차이즈 매장</span><h3>샌드위치 프랜차이즈 매장 철거</h3><p>매장 철거 및 원상복구 완료 사례</p></div>
         </div>
-        <div class="case-card">
+        <div class="case-card" data-cat="store">
           <div class="case-pair">
             <div class="half has-img"><img src="/images/img_07_ec62178d914e.jpg" alt="카페 철거 전 카운터와 집기가 있는 내부" loading="lazy" decoding="async"></div>
             <div class="half has-img"><img src="/images/img_08_07103554deac.jpg" alt="카페 철거 후 원상복구된 빈 내부" loading="lazy" decoding="async"></div>
           </div>
           <div class="case-body"><span class="tag">카페</span><h3>카페 매장 철거</h3><p>내부 집기 및 카운터 철거 후 원상복구</p></div>
         </div>
-        <div class="case-card">
+        <div class="case-card" data-cat="office">
           <div class="case-pair">
             <div class="half has-img"><img src="/images/img_09_e7734376c82b.jpg" alt="기존 인테리어가 남아 있는 철거 전 내부" loading="lazy" decoding="async"></div>
             <div class="half has-img"><img src="/images/img_10_ab277e150c9d.jpg" alt="철거 후 깔끔하게 비워진 사무공간" loading="lazy" decoding="async"></div>
           </div>
           <div class="case-body"><span class="tag">상업공간</span><h3>사무실 공간 철거</h3><p>기존 인테리어 철거 후 깔끔한 공간으로 정리</p></div>
         </div>
-        <div class="case-card">
+        <div class="case-card" data-cat="store">
           <div class="case-pair">
             <div class="half has-img"><img src="/images/img_15_ebb16d43da74.jpg" alt="식당 철거 전 홀과 카운터" loading="lazy" decoding="async"></div>
             <div class="half has-img"><img src="/images/img_16_a0921bddb546.jpg" alt="식당 주방 설비 철거 전 현장" loading="lazy" decoding="async"></div>
@@ -121,15 +121,16 @@
           <div class="case-body"><span class="tag">식당</span><h3>식당 철거 전 현장</h3><p>카운터와 주방 설비 철거 전 현장 상태</p></div>
         </div>
 
-        <div class="case-card">
+        <div class="case-card" data-cat="store">
           <div class="case-img has-img"><img src="/images/img_17_e31e33e87381.jpg" alt="의류매장 철거 전후 비교" loading="lazy" decoding="async"></div>
           <div class="case-body"><span class="tag">의류매장</span><h3>의류매장 철거 · 원상복구</h3><p>부티크형 의류매장의 철거 전후 사례</p></div>
         </div>
-<div class="case-card">
+<div class="case-card" data-cat="store">
           <div class="case-img has-img"><img src="/images/img_18_4b024390f95c.jpg" alt="세탁소 철거 전후 비교" loading="lazy" decoding="async"></div>
           <div class="case-body"><span class="tag">세탁소</span><h3>세탁소 철거 · 원상복구</h3><p>세탁 장비 철거 후 깔끔하게 정리한 원상복구 사례</p></div>
         </div>
 </div>
+      <p class="case-empty" id="caseEmpty" hidden>해당 분류의 시공사례는 준비 중입니다. 비슷한 현장 사례는 <a href="https://open.kakao.com/o/gXQOaEOi" target="_blank" rel="noopener noreferrer">카카오 상담</a>으로 문의해 주세요.</p>
     </div>
   </section>
 
@@ -141,7 +142,7 @@
       <div class="review-wrap">
         <div class="review-track" id="reviewTrack">
           <article class="review-card">
-            <div class="review-img" style="background-image:url('/images/img_05_63ae4c007a36.jpg')"></div>
+            <div class="review-img has-img"><img src="/images/img_05_63ae4c007a36.jpg" alt="프랜차이즈 매장 철거 고객 후기 현장 사진" loading="lazy" decoding="async"></div>
             <div class="review-body">
               <span class="tag">프랜차이즈 매장 철거</span>
               <p>“일정 안내가 명확했고 철거 범위를 이해하기 쉽게 설명해주셨습니다.”</p>
@@ -151,7 +152,7 @@
           </article>
 
           <article class="review-card">
-            <div class="review-img" style="background-image:url('/images/img_07_ec62178d914e.jpg')"></div>
+            <div class="review-img has-img"><img src="/images/img_07_ec62178d914e.jpg" alt="카페 원상복구 고객 후기 현장 사진" loading="lazy" decoding="async"></div>
             <div class="review-body">
               <span class="tag">카페 원상복구</span>
               <p>“집기 철거와 원상복구 범위를 함께 안내받아 준비하기 편했습니다.”</p>
@@ -161,7 +162,7 @@
           </article>
 
           <article class="review-card">
-            <div class="review-img" style="background-image:url('/images/img_06_69e11a3e72fb.jpg')"></div>
+            <div class="review-img has-img"><img src="/images/img_06_69e11a3e72fb.jpg" alt="상가 원상복구 고객 후기 현장 사진" loading="lazy" decoding="async"></div>
             <div class="review-body">
               <span class="tag">상가 원상복구</span>
               <p>“철거 후 공간이 깔끔하게 정리되어 다음 일정 준비가 수월했습니다.”</p>
@@ -171,7 +172,7 @@
           </article>
 
           <article class="review-card">
-            <div class="review-img" style="background-image:url('/images/img_08_07103554deac.jpg')"></div>
+            <div class="review-img has-img"><img src="/images/img_08_07103554deac.jpg" alt="매장 내부 철거 고객 후기 현장 사진" loading="lazy" decoding="async"></div>
             <div class="review-body">
               <span class="tag">매장 내부 철거</span>
               <p>“작업 범위와 마무리 상태를 확인하기 쉬워 만족스러웠습니다.”</p>
@@ -181,7 +182,7 @@
           </article>
 
           <article class="review-card">
-            <div class="review-img" style="background-image:url('/images/img_09_e7734376c82b.jpg')"></div>
+            <div class="review-img has-img"><img src="/images/img_09_e7734376c82b.jpg" alt="상업공간 철거 고객 후기 현장 사진" loading="lazy" decoding="async"></div>
             <div class="review-body">
               <span class="tag">상업공간 철거</span>
               <p>“기존 인테리어 철거 범위를 먼저 설명해줘서 진행 과정이 편했습니다.”</p>
@@ -191,7 +192,7 @@
           </article>
 
           <article class="review-card">
-            <div class="review-img" style="background-image:url('/images/img_10_ab277e150c9d.jpg')"></div>
+            <div class="review-img has-img"><img src="/images/img_10_ab277e150c9d.jpg" alt="사무실 원상복구 고객 후기 현장 사진" loading="lazy" decoding="async"></div>
             <div class="review-body">
               <span class="tag">사무실 원상복구</span>
               <p>“퇴거 일정에 맞춰 정리가 끝나서 일정 관리에 도움이 됐습니다.”</p>
@@ -201,7 +202,7 @@
           </article>
 
           <article class="review-card">
-            <div class="review-img" style="background-image:url('/images/img_15_ebb16d43da74.jpg')"></div>
+            <div class="review-img has-img"><img src="/images/img_15_ebb16d43da74.jpg" alt="식당 철거 고객 후기 현장 사진" loading="lazy" decoding="async"></div>
             <div class="review-body">
               <span class="tag">식당 철거</span>
               <p>“주방과 홀의 철거 범위를 구분해서 안내해주셔서 이해하기 좋았습니다.”</p>
@@ -252,6 +253,12 @@
 </div>
 <script>
 document.querySelector('.menu-btn').addEventListener('click',()=>document.querySelector('.mobile-menu').classList.toggle('open'));
+document.querySelectorAll('.filter[data-filter]').forEach(btn=>btn.addEventListener('click',()=>{
+  const f=btn.dataset.filter;let shown=0;
+  document.querySelectorAll('.filter[data-filter]').forEach(b=>{const on=b===btn;b.classList.toggle('active',on);b.setAttribute('aria-pressed',on);});
+  document.querySelectorAll('.case-card[data-cat]').forEach(card=>{const show=f==='all'||card.dataset.cat===f;card.hidden=!show;if(show)shown++;});
+  document.getElementById('caseEmpty').hidden=shown>0;
+}));
 let reviewIndex=0;
 const track=document.getElementById('reviewTrack');
 const reviewCards=[...track.children];
