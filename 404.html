@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>페이지를 찾을 수 없습니다 - 오늘의 철거</title>
+<meta name="description" content="요청하신 페이지를 찾을 수 없습니다. 오늘의 철거 홈, 시공사례, 폐업지원금, 지역별 철거 페이지에서 원하시는 정보를 찾아보세요.">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" sizes="192x192" href="https://onulcheolgeo.kr/favicon.png">
+<link rel="shortcut icon" href="https://onulcheolgeo.kr/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="https://onulcheolgeo.kr/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">
+      <span class="logo-mark"></span>
+      <span>오늘의 철거<small>SPACE REBORN</small></span>
+    </a>
+    <nav>
+      <a href="/about/">오늘의 철거소개</a>
+      <a href="/support/">폐업지원금</a>
+      <a href="/cases/">시공사례</a>
+      <a href="/interior/">인테리어</a>
+      <a href="/area/">지역별 철거</a>
+    </nav>
+    <div class="header-contact-actions">
+      <a class="primary" href="tel:01079902378">전화 상담</a>
+      <a class="dark" href="https://open.kakao.com/o/gXQOaEOi" target="_blank" rel="noopener noreferrer">카카오 상담</a>
+    </div>
+    <button class="menu-btn" aria-label="메뉴 열기">☰</button>
+    <div class="mobile-menu">
+      <div class="mobile-quick-actions">
+        <a class="primary" href="tel:01079902378">전화 상담</a>
+        <a class="dark" href="https://open.kakao.com/o/gXQOaEOi" target="_blank" rel="noopener noreferrer">카카오 상담</a>
+      </div>
+      <a href="/about/">오늘의 철거소개</a>
+      <a href="/support/">폐업지원금</a>
+      <a href="/cases/">시공사례</a>
+      <a href="/interior/">인테리어</a>
+      <a href="/area/">지역별 철거</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="page active" id="page-404">
+  <section class="section" style="background:linear-gradient(135deg,#f7f8fa,#fff)">
+    <div class="wrap nf-wrap">
+      <div class="nf-code" aria-hidden="true">404</div>
+      <h1>찾으시는 페이지가 없습니다</h1>
+      <p class="section-sub">주소가 바뀌었거나 잘못 입력된 것 같습니다. 아래에서 필요한 정보를 찾아보시거나 바로 상담해 주세요.</p>
+      <div class="nf-btns">
+        <a class="btn btn-yellow" href="/">홈으로 가기</a>
+        <a class="btn btn-outline" href="https://naver.me/551kJA6x" target="_blank" rel="noopener noreferrer">무료 방문견적 신청</a>
+        <a class="btn btn-outline" href="https://open.kakao.com/o/gXQOaEOi" target="_blank" rel="noopener noreferrer">카카오 상담</a>
+      </div>
+      <h2 class="nf-sub">많이 찾는 페이지</h2>
+      <ul class="nf-links">
+        <li><a href="/support/">폐업철거 · 점포철거비 지원 안내</a></li>
+        <li><a href="/cases/">철거 · 원상복구 시공사례</a></li>
+        <li><a href="/demolition/">철거 · 원상복구 진행 순서</a></li>
+        <li><a href="/area/seoul/">서울 철거</a></li>
+        <li><a href="/area/gyeonggi/">경기 철거</a></li>
+        <li><a href="/area/incheon/">인천 철거</a></li>
+      </ul>
+    </div>
+  </section>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <a href="/" class="logo"><span class="logo-mark"></span><span>오늘의 철거<small>SPACE REBORN</small></span></a>
+    <div class="footer-contact">
+      <a class="primary" href="tel:01079902378">전화 상담</a>
+      <a href="https://open.kakao.com/o/gXQOaEOi" target="_blank" rel="noopener noreferrer">카카오 상담</a>
+      <a href="https://naver.me/551kJA6x" target="_blank" rel="noopener noreferrer">무료 견적 신청</a>
+    </div>
+    <div class="footer-copy">
+      상담이 필요하시면 바로 연락주세요.
+      <a class="footer-phone" href="tel:01079902378" aria-label="오늘의 철거 전화 상담">☎ 전화 상담</a>
+      <address class="footer-address">주소 (02580) 서울특별시 동대문구 왕산로 25 (신설동 89-79) 빌딩</address>
+      <span>© 2026 오늘의 철거. All rights reserved.</span>
+    </div>
+  </div>
+  <div class="wrap visitor-counter">
+    <img src="https://hits.sh/onulcheolgeo.kr.svg?view=total&amp;label=%EC%B4%9D%20%EB%B0%A9%EB%AC%B8%EC%9E%90&amp;color=f8bd00&amp;labelColor=2a313b&amp;style=flat-square" alt="총 방문자 수">
+    <img id="today-visitors" alt="오늘 방문자 수" hidden>
+  </div>
+  <script>
+  (function(){
+    // 오늘 방문자: 한국 시간(KST) 날짜별 카운터 → 매일 자정(KST)에 0부터 새로 셈
+    var d=new Date(Date.now()+9*3600*1000).toISOString().slice(0,10);
+    var img=document.getElementById('today-visitors');
+    img.src='https://hits.sh/onulcheolgeo.kr/today/'+d+'.svg?view=total&label=%EC%98%A4%EB%8A%98%20%EB%B0%A9%EB%AC%B8%EC%9E%90&color=f8bd00&labelColor=2a313b&style=flat-square';
+    img.hidden=false;
+  })();
+  </script>
+</footer>
+<div class="mobile-fab-group">
+  <a class="mobile-call-fab" href="tel:01079902378" aria-label="오늘의 철거 전화 상담">☎ 전화 상담</a>
+  <a class="mobile-quote-fab" href="https://naver.me/551kJA6x" target="_blank" rel="noopener noreferrer" aria-label="무료 방문견적 신청">방문견적 신청</a>
+</div>
+<script>
+document.querySelector('.menu-btn').addEventListener('click',()=>document.querySelector('.mobile-menu').classList.toggle('open'));
+</script>
+</body>
+</html>
