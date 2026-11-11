@@ -29,7 +29,7 @@
   },
   {
    "no": 2,
-   "status": "todo",
+   "status": "done",
    "slug": "store-restoration-scope",
    "keyword": "상가 원상복구 범위",
    "category": "원상복구",
@@ -49,7 +49,8 @@
    "related_pages": [
     "/demolition/",
     "/support/"
-   ]
+   ],
+   "published": "2026-11-11"
   },
   {
    "no": 3,
