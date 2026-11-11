@@ -215,7 +215,7 @@ def render_post(d, by_slug, shell):
       <p>업종 · 지역 · 평수 · 현장 사진을 보내주시면 철거 범위와 일정을 함께 확인해 드립니다.</p>
       <div class="post-cta-btns">
         <a class="btn btn-yellow" href="https://naver.me/551kJA6x" target="_blank" rel="noopener noreferrer">무료 방문견적 신청</a>
-        <a class="btn btn-outline" href="https://open.kakao.com/o/gXQOaEOi" target="_blank" rel="noopener noreferrer">카카오 상담</a>
+        <a class="btn btn-outline" href="https://open.kakao.com/o/s7KwuzWi" target="_blank" rel="noopener noreferrer">카카오 상담</a>
         <a class="btn btn-outline" href="tel:01079902378">☎ 전화 상담</a>
       </div>
     </div>
