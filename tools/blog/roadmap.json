@@ -54,7 +54,7 @@
   },
   {
    "no": 3,
-   "status": "todo",
+   "status": "done",
    "slug": "demolition-quote-differences",
    "keyword": "상가 철거 비용",
    "category": "비용 · 견적",
@@ -73,7 +73,8 @@
    "related_pages": [
     "/",
     "/demolition/"
-   ]
+   ],
+   "published": "2026-11-11"
   },
   {
    "no": 4,
