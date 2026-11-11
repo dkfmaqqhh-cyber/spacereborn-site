@@ -1,0 +1,650 @@
+{
+ "_설명": "철거정보 자동 발행 주제 대기열. 예약 작업은 status가 todo이고 season_from <= 오늘 <= season_until(없으면 언제나)인 글 중 no가 가장 작은 1편을 쓴다. 쓰고 나면 status를 done으로, published에 날짜와 slug를 적는다. verify는 공식 출처로 확인해야 하는 사실(확인 못 하면 빼거나 '공고·관할 기관 확인'으로만 안내). 검색량은 아직 네이버 키워드도구로 확인하지 않은 추정 주제이며, 사장님이 키워드도구 자료를 주면 순서를 다시 정한다.",
+ "items": [
+  {
+   "no": 1,
+   "status": "done",
+   "slug": "year-end-store-closing-schedule",
+   "keyword": "연말 폐업",
+   "category": "폐업 · 지원금",
+   "cover": "service_closing_demolition.jpg",
+   "title_hint": "연말 폐업 준비, 철거 일정은 언제부터 잡아야 할까",
+   "season_until": "2026-12-31",
+   "questions": [
+    "폐업 결정 후 무엇부터 해야 하나요?",
+    "점포철거비 지원은 언제 신청하나요?",
+    "폐업 신고와 철거 중 무엇이 먼저인가요?",
+    "연말에 철거 일정이 몰리면?",
+    "임대인에게는 언제 알리나요?"
+   ],
+   "verify": [
+    "희망리턴패키지 점포철거비 신청 시점(철거 전)·1차/2차 서류(소상공인시장진흥공단 자료)",
+    "사업자 폐업신고 방법(국세청 홈택스·세무서)과 폐업 시 부가가치세 확정신고 기한(국세청)"
+   ],
+   "related_pages": [
+    "/support/",
+    "/demolition/"
+   ],
+   "published": "2026-11-11"
+  },
+  {
+   "no": 2,
+   "status": "todo",
+   "slug": "store-restoration-scope",
+   "keyword": "상가 원상복구 범위",
+   "category": "원상복구",
+   "cover": "service_restoration.jpg",
+   "title_hint": "상가 원상복구 범위, 어디까지 해야 할까",
+   "questions": [
+    "원상복구는 어디까지가 기본인가요?",
+    "계약서 특약이 없으면?",
+    "전 임차인 시설을 인수했다면?",
+    "입주 당시 사진이 왜 중요한가요?",
+    "분쟁이 생기면 어디에 물어보나요?"
+   ],
+   "verify": [
+    "민법 제615조·제654조(임차인의 원상회복의무) — 국가법령정보센터",
+    "상가건물임대차분쟁조정위원회 안내(법률구조공단 등 공공기관)"
+   ],
+   "related_pages": [
+    "/demolition/",
+    "/support/"
+   ]
+  },
+  {
+   "no": 3,
+   "status": "todo",
+   "slug": "demolition-quote-differences",
+   "keyword": "상가 철거 비용",
+   "category": "비용 · 견적",
+   "cover": "img_04_83d6e5d49e6f.jpg",
+   "title_hint": "상가 철거 비용, 업체마다 견적이 다른 이유 7가지",
+   "questions": [
+    "철거 비용은 무엇으로 정해지나요?",
+    "같은 평수인데 왜 차이가 나나요?",
+    "견적서에서 꼭 볼 항목은?",
+    "추가 비용이 생기는 경우는?",
+    "견적을 정확히 받으려면 무엇을 보내야 하나요?"
+   ],
+   "verify": [
+    "건설폐기물 처리 관련 기준(환경부·법령) — 금액은 쓰지 않음"
+   ],
+   "related_pages": [
+    "/",
+    "/demolition/"
+   ]
+  },
+  {
+   "no": 4,
+   "status": "todo",
+   "slug": "closing-business-report-order",
+   "keyword": "폐업 신고 순서",
+   "category": "폐업 · 지원금",
+   "cover": "img_24_375eced0b585.jpg",
+   "title_hint": "폐업 신고 순서, 세무서·영업신고·철거는 어떤 순서로 할까",
+   "questions": [
+    "폐업 신고는 어디서 하나요?",
+    "영업신고(인허가) 폐업은 따로 해야 하나요?",
+    "점포철거비 지원과 순서가 꼬이지 않으려면?",
+    "폐업 후 부가세 신고는?",
+    "철거는 언제 하나요?"
+   ],
+   "verify": [
+    "홈택스 폐업신고 절차·부가가치세 폐업 확정신고 기한(국세청)",
+    "식품위생법 등 영업 폐업신고(정부24·관할 지자체)",
+    "점포철거비 서류(폐업사실증명원 등)"
+   ],
+   "related_pages": [
+    "/support/"
+   ]
+  },
+  {
+   "no": 5,
+   "status": "todo",
+   "slug": "cafe-closing-demolition",
+   "keyword": "카페 폐업 철거",
+   "category": "업종별 철거",
+   "cover": "img_07_ec62178d914e.jpg",
+   "title_hint": "카페 폐업 철거, 집기 정리부터 원상복구까지 순서",
+   "questions": [
+    "카페 철거는 어떤 순서로 하나요?",
+    "커피 머신·냉장 설비는 어떻게 하나요?",
+    "카운터·바닥·천장은 어디까지 철거하나요?",
+    "원상복구 범위는 어떻게 정하나요?",
+    "철거 전에 준비할 것은?"
+   ],
+   "verify": [
+    "점포철거비 단순 작업 제외(집기류 폐기 등) — 소상공인시장진흥공단 자료"
+   ],
+   "related_pages": [
+    "/cases/",
+    "/support/"
+   ]
+  },
+  {
+   "no": 6,
+   "status": "todo",
+   "slug": "restaurant-kitchen-demolition",
+   "keyword": "식당 철거",
+   "category": "업종별 철거",
+   "cover": "img_16_a0921bddb546.jpg",
+   "title_hint": "식당 철거, 주방 설비·덕트·바닥 방수까지 확인할 것",
+   "questions": [
+    "식당 철거는 다른 매장과 무엇이 다른가요?",
+    "주방 덕트와 후드는 철거 대상인가요?",
+    "가스 설비는 어떻게 정리하나요?",
+    "바닥 방수·배수는?",
+    "철거 전 체크리스트"
+   ],
+   "verify": [
+    "도시가스 사용 중지·철거 신청은 관할 도시가스사 절차(공식 안내 확인, 확인 못 하면 '관할 도시가스사 확인')"
+   ],
+   "related_pages": [
+    "/cases/",
+    "/demolition/"
+   ]
+  },
+  {
+   "no": 7,
+   "status": "todo",
+   "slug": "choose-demolition-company",
+   "keyword": "철거업체 선택",
+   "category": "비용 · 견적",
+   "cover": "img_02_6c6933847304.jpg",
+   "title_hint": "철거업체 선택할 때 계약 전에 확인할 6가지",
+   "questions": [
+    "철거업체는 무엇을 보고 고르나요?",
+    "사업자 확인은 어떻게 하나요?",
+    "폐기물 처리는 어떻게 하는지 물어봐야 하나요?",
+    "계약서에 꼭 넣을 내용은?",
+    "지원금 신청이 필요하면?"
+   ],
+   "verify": [
+    "사업자등록 상태 조회(국세청 홈택스)",
+    "건설폐기물 처리 관련 일반 기준(환경부)"
+   ],
+   "related_pages": [
+    "/",
+    "/support/"
+   ]
+  },
+  {
+   "no": 8,
+   "status": "todo",
+   "slug": "office-moving-restoration",
+   "keyword": "사무실 원상복구",
+   "category": "사무실 철거",
+   "cover": "service_office_demolition.jpg",
+   "title_hint": "사무실 이전 원상복구, 파티션·바닥·천장 어디까지 할까",
+   "questions": [
+    "사무실 원상복구는 무엇을 하나요?",
+    "파티션과 전기·통신 배선은?",
+    "바닥재·천장은 어디까지?",
+    "건물 관리 규정은 왜 먼저 보나요?",
+    "이전 일정은 어떻게 잡나요?"
+   ],
+   "verify": [
+    "민법 원상회복의무 조문(국가법령정보센터) — 필요할 때만"
+   ],
+   "related_pages": [
+    "/demolition/",
+    "/area/"
+   ]
+  },
+  {
+   "no": 9,
+   "status": "todo",
+   "slug": "winter-demolition-tips",
+   "keyword": "겨울철 철거",
+   "category": "철거 상식",
+   "cover": "img_25_d53feb2a7a7d.jpg",
+   "title_hint": "겨울철 철거 공사, 동파·결로·일정에서 주의할 점",
+   "season_from": "2026-11-15",
+   "season_until": "2027-02-15",
+   "questions": [
+    "겨울에 철거하면 무엇이 다른가요?",
+    "수도·배관 동파는 어떻게 막나요?",
+    "해가 짧으면 일정은?",
+    "폐기물 반출에 영향이 있나요?",
+    "겨울 철거 전 체크리스트"
+   ],
+   "verify": [
+    "수도 동파 예방 안내(지자체·상수도사업본부 공식 안내)"
+   ],
+   "related_pages": [
+    "/demolition/"
+   ]
+  },
+  {
+   "no": 10,
+   "status": "todo",
+   "slug": "asbestos-check-before-demolition",
+   "keyword": "석면 철거",
+   "category": "철거 상식",
+   "cover": "img_25_d53feb2a7a7d.jpg",
+   "title_hint": "오래된 상가 석면 철거, 확인 절차와 주의할 점",
+   "questions": [
+    "석면이 들어간 자재는 무엇인가요?",
+    "철거 전에 석면 조사를 해야 하나요?",
+    "석면이 있으면 일반 철거업체가 해도 되나요?",
+    "비용과 일정은 어떻게 달라지나요?",
+    "임차인이 확인할 것은?"
+   ],
+   "verify": [
+    "석면안전관리법·산업안전보건법의 석면조사·해체제거 기준(국가법령정보센터, 고용노동부·환경부)"
+   ],
+   "related_pages": [
+    "/demolition/"
+   ]
+  },
+  {
+   "no": 11,
+   "status": "todo",
+   "slug": "construction-waste-disposal",
+   "keyword": "철거 폐기물 처리",
+   "category": "철거 상식",
+   "cover": "service_closing_demolition.jpg",
+   "title_hint": "철거 폐기물 처리, 종류별로 어떻게 나가나요",
+   "questions": [
+    "철거 폐기물은 어떤 종류가 있나요?",
+    "건설폐기물과 생활폐기물은 무엇이 다른가요?",
+    "집기·가구는 어떻게 처리하나요?",
+    "폐기물 처리비가 견적에 들어가나요?",
+    "불법 투기를 피하려면?"
+   ],
+   "verify": [
+    "건설폐기물의 재활용촉진에 관한 법률 기준(국가법령정보센터·환경부)",
+    "대형 생활폐기물 배출은 관할 구청 안내"
+   ],
+   "related_pages": [
+    "/demolition/",
+    "/"
+   ]
+  },
+  {
+   "no": 12,
+   "status": "todo",
+   "slug": "apartment-interior-demolition-notice",
+   "keyword": "아파트 내부 철거",
+   "category": "주거 철거",
+   "cover": "img_09_e7734376c82b.jpg",
+   "title_hint": "아파트 내부 철거 전 관리사무소 신고와 이웃 안내",
+   "questions": [
+    "아파트 철거 전에 신고해야 하나요?",
+    "이웃 동의가 필요한 경우는?",
+    "작업 가능 시간은?",
+    "엘리베이터 보호는?",
+    "철거 범위는 어떻게 정하나요?"
+   ],
+   "verify": [
+    "공동주택관리법 행위허가·신고 기준(국가법령정보센터)",
+    "관리규약은 단지마다 다름 명시"
+   ],
+   "related_pages": [
+    "/demolition/",
+    "/interior/"
+   ]
+  },
+  {
+   "no": 13,
+   "status": "todo",
+   "slug": "demolition-noise-complaints",
+   "keyword": "철거 소음 민원",
+   "category": "철거 상식",
+   "cover": "img_02_6c6933847304.jpg",
+   "title_hint": "상가 철거 소음 민원, 작업 시간과 미리 알릴 것",
+   "questions": [
+    "철거 소음 기준이 있나요?",
+    "작업 가능 시간은 누가 정하나요?",
+    "주변 상가에는 어떻게 알리나요?",
+    "민원이 생기면?",
+    "소음을 줄이는 방법은?"
+   ],
+   "verify": [
+    "소음·진동관리법 생활소음 규제기준(국가법령정보센터·환경부)"
+   ],
+   "related_pages": [
+    "/demolition/"
+   ]
+  },
+  {
+   "no": 14,
+   "status": "todo",
+   "slug": "restoration-dispute-checklist",
+   "keyword": "원상복구 분쟁",
+   "category": "원상복구",
+   "cover": "img_26_29adb6df02e7.jpg",
+   "title_hint": "원상복구 분쟁 줄이는 퇴거 전 체크리스트",
+   "questions": [
+    "원상복구 분쟁은 왜 생기나요?",
+    "입주 때 상태를 어떻게 증명하나요?",
+    "보증금에서 비용을 빼겠다고 하면?",
+    "협의는 어떻게 남기나요?",
+    "조정 기관이 있나요?"
+   ],
+   "verify": [
+    "상가건물임대차분쟁조정위원회(공공기관 안내)",
+    "민법 원상회복의무"
+   ],
+   "related_pages": [
+    "/demolition/"
+   ]
+  },
+  {
+   "no": 15,
+   "status": "todo",
+   "slug": "facility-handover-vs-demolition",
+   "keyword": "시설 인수",
+   "category": "원상복구",
+   "cover": "img_06_69e11a3e72fb.jpg",
+   "title_hint": "다음 임차인에게 시설 인수 vs 철거, 무엇이 나을까",
+   "questions": [
+    "시설을 넘기면 철거를 안 해도 되나요?",
+    "임대인 동의는 필요한가요?",
+    "인수 약속이 깨지면?",
+    "부분만 넘기는 경우는?",
+    "결정 전에 확인할 것"
+   ],
+   "verify": [
+    "민법 원상회복의무(임대인 동의 관련은 일반 안내 수준)"
+   ],
+   "related_pages": [
+    "/demolition/",
+    "/support/"
+   ]
+  },
+  {
+   "no": 16,
+   "status": "todo",
+   "slug": "store-sign-removal",
+   "keyword": "간판 철거",
+   "category": "철거 상식",
+   "cover": "img_05_63ae4c007a36.jpg",
+   "title_hint": "폐업할 때 간판 철거, 따로 신고해야 할까",
+   "questions": [
+    "간판도 철거해야 하나요?",
+    "간판 철거 신고가 필요한가요?",
+    "점포철거비 지원에 간판만은 안 되나요?",
+    "높은 곳 간판은 어떻게?",
+    "언제 떼는 것이 좋나요?"
+   ],
+   "verify": [
+    "옥외광고물 등의 관리와 옥외광고산업 진흥에 관한 법률 — 표시기간 만료·폐업 시 제거 의무(국가법령정보센터)",
+    "점포철거비 간판 철거 단독 제외(소상공인시장진흥공단 자료)"
+   ],
+   "related_pages": [
+    "/support/"
+   ]
+  },
+  {
+   "no": 17,
+   "status": "todo",
+   "slug": "before-interior-demolition-checklist",
+   "keyword": "인테리어 철거",
+   "category": "주거 철거",
+   "cover": "img_20_912e568bdbd9.jpg",
+   "title_hint": "인테리어 철거 전 체크리스트, 남길 것과 걷어낼 것",
+   "questions": [
+    "인테리어 전에 철거 범위는 어떻게 정하나요?",
+    "남겨도 되는 것은?",
+    "전기·설비는?",
+    "철거와 인테리어 일정은 어떻게 잇나요?",
+    "견적을 따로 받나요?"
+   ],
+   "verify": [],
+   "related_pages": [
+    "/interior/",
+    "/demolition/"
+   ]
+  },
+  {
+   "no": 18,
+   "status": "todo",
+   "slug": "partial-vs-full-demolition",
+   "keyword": "부분 철거",
+   "category": "비용 · 견적",
+   "cover": "img_10_ab277e150c9d.jpg",
+   "title_hint": "부분 철거 vs 전체 철거, 어떻게 정할까",
+   "questions": [
+    "부분 철거로 충분한 경우는?",
+    "전체 철거가 필요한 경우는?",
+    "비용은 어떻게 달라지나요?",
+    "원상복구 조건과의 관계는?",
+    "결정 전 확인할 것"
+   ],
+   "verify": [
+    "점포철거비 부분 철거 신청 가능 조건(소상공인시장진흥공단 자료)"
+   ],
+   "related_pages": [
+    "/demolition/",
+    "/support/"
+   ]
+  },
+  {
+   "no": 19,
+   "status": "todo",
+   "slug": "hair-salon-demolition",
+   "keyword": "미용실 철거",
+   "category": "업종별 철거",
+   "cover": "service_store_demolition.jpg",
+   "title_hint": "미용실 철거, 샴푸대 배관과 전기 설비 정리 순서",
+   "questions": [
+    "미용실 철거는 무엇이 다른가요?",
+    "샴푸대 급배수 배관은?",
+    "전기 용량·조명은?",
+    "거울·의자 집기는?",
+    "원상복구 범위는?"
+   ],
+   "verify": [],
+   "related_pages": [
+    "/cases/",
+    "/demolition/"
+   ]
+  },
+  {
+   "no": 20,
+   "status": "todo",
+   "slug": "academy-demolition",
+   "keyword": "학원 철거",
+   "category": "업종별 철거",
+   "cover": "img_10_ab277e150c9d.jpg",
+   "title_hint": "학원 철거와 원상복구, 칸막이 교실 정리 순서",
+   "questions": [
+    "학원 철거는 어떤 순서로 하나요?",
+    "강의실 칸막이는?",
+    "학원 폐원 신고는?",
+    "책상·의자 처리는?",
+    "원상복구 범위는?"
+   ],
+   "verify": [
+    "학원 폐원 신고(학원의 설립·운영 및 과외교습에 관한 법률, 관할 교육지원청)"
+   ],
+   "related_pages": [
+    "/cases/",
+    "/demolition/"
+   ]
+  },
+  {
+   "no": 21,
+   "status": "todo",
+   "slug": "gym-demolition",
+   "keyword": "헬스장 철거",
+   "category": "업종별 철거",
+   "cover": "img_02_6c6933847304.jpg",
+   "title_hint": "헬스장 철거, 운동기구와 바닥 매트 정리 순서",
+   "questions": [
+    "헬스장 철거는 무엇이 다른가요?",
+    "운동기구는 어떻게 처리하나요?",
+    "고무 바닥 매트는?",
+    "샤워실·배관은?",
+    "원상복구 범위는?"
+   ],
+   "verify": [
+    "체육시설업 폐업 신고(관할 지자체 — 확인 못 하면 '관할 구청 확인')"
+   ],
+   "related_pages": [
+    "/cases/",
+    "/demolition/"
+   ]
+  },
+  {
+   "no": 22,
+   "status": "todo",
+   "slug": "clinic-closing-demolition",
+   "keyword": "병원 폐업 철거",
+   "category": "업종별 철거",
+   "cover": "img_09_e7734376c82b.jpg",
+   "title_hint": "병원·의원 폐업 철거 전에 확인할 것",
+   "questions": [
+    "의원 폐업 시 철거 전에 할 일은?",
+    "의료폐기물은 철거업체가 처리하나요?",
+    "의료기기·방사선 장비는?",
+    "원상복구 범위는?",
+    "일정은 어떻게 잡나요?"
+   ],
+   "verify": [
+    "의료기관 폐업신고(의료법, 관할 보건소)",
+    "의료폐기물 처리 기준(폐기물관리법·환경부)",
+    "진단용 방사선 발생장치 관련 신고(관할 보건소)"
+   ],
+   "related_pages": [
+    "/demolition/"
+   ]
+  },
+  {
+   "no": 23,
+   "status": "todo",
+   "slug": "franchise-store-closing",
+   "keyword": "프랜차이즈 폐점 철거",
+   "category": "업종별 철거",
+   "cover": "img_05_63ae4c007a36.jpg",
+   "title_hint": "프랜차이즈 매장 폐점 철거, 본사와 먼저 확인할 것",
+   "questions": [
+    "프랜차이즈 폐점 때 철거는 누가 하나요?",
+    "간판·인테리어 소유는?",
+    "가맹계약서에서 볼 조항은?",
+    "원상복구와 순서는?",
+    "점포철거비 지원 대상인가요?"
+   ],
+   "verify": [
+    "가맹사업법 관련은 일반 안내 수준(공정거래위원회 자료 확인 시만)",
+    "점포철거비 대상 조건"
+   ],
+   "related_pages": [
+    "/cases/",
+    "/support/"
+   ]
+  },
+  {
+   "no": 24,
+   "status": "todo",
+   "slug": "convenience-store-closing",
+   "keyword": "편의점 폐점 철거",
+   "category": "업종별 철거",
+   "cover": "img_06_69e11a3e72fb.jpg",
+   "title_hint": "편의점 폐점 철거, 냉장 설비와 진열대 정리 순서",
+   "questions": [
+    "편의점 철거는 무엇이 다른가요?",
+    "냉장·냉동 쇼케이스는?",
+    "진열대·계산대는?",
+    "원상복구 범위는?",
+    "본사와 확인할 것은?"
+   ],
+   "verify": [],
+   "related_pages": [
+    "/cases/",
+    "/demolition/"
+   ]
+  },
+  {
+   "no": 25,
+   "status": "todo",
+   "slug": "demolition-quote-checklist",
+   "keyword": "철거 견적서",
+   "category": "비용 · 견적",
+   "cover": "about_inner_new.jpg",
+   "title_hint": "철거 견적서 볼 때 확인할 항목 체크리스트",
+   "questions": [
+    "철거 견적서에는 무엇이 들어가나요?",
+    "폐기물 처리비는 포함인가요?",
+    "원상복구 범위가 적혀 있나요?",
+    "추가 비용 조건은?",
+    "지원금 정산에 쓸 수 있나요?"
+   ],
+   "verify": [
+    "점포철거비 정산 서류(철거공사 내역서·전자세금계산서)"
+   ],
+   "related_pages": [
+    "/",
+    "/support/"
+   ]
+  },
+  {
+   "no": 26,
+   "status": "todo",
+   "slug": "lease-end-restoration-schedule",
+   "keyword": "임대차 만료 원상복구",
+   "category": "원상복구",
+   "cover": "img_08_07103554deac.jpg",
+   "title_hint": "임대차 만료 전 원상복구 일정, 몇 주 전부터 준비할까",
+   "questions": [
+    "임대차 만료 전에 무엇부터 하나요?",
+    "원상복구 기간은 계약 기간에 포함되나요?",
+    "보증금 반환과 원상복구 순서는?",
+    "일정이 밀리면?",
+    "체크리스트"
+   ],
+   "verify": [
+    "상가건물 임대차보호법 갱신요구 기간 등은 국가법령정보센터 확인 시만"
+   ],
+   "related_pages": [
+    "/demolition/"
+   ]
+  },
+  {
+   "no": 27,
+   "status": "todo",
+   "slug": "used-equipment-before-demolition",
+   "keyword": "폐업 집기 처분",
+   "category": "폐업 · 지원금",
+   "cover": "img_15_ebb16d43da74.jpg",
+   "title_hint": "폐업 집기 처분, 철거 전에 정리하면 좋은 순서",
+   "questions": [
+    "집기는 철거 전에 정리해야 하나요?",
+    "중고로 파는 경우 시기는?",
+    "남은 집기는 어떻게 버리나요?",
+    "점포철거비에 집기 폐기만은?",
+    "체크리스트"
+   ],
+   "verify": [
+    "점포철거비 집기류 폐기 단독 제외(소상공인시장진흥공단 자료)",
+    "대형 폐기물 배출(관할 구청)"
+   ],
+   "related_pages": [
+    "/support/",
+    "/demolition/"
+   ]
+  },
+  {
+   "no": 28,
+   "status": "todo",
+   "slug": "clothing-store-demolition",
+   "keyword": "옷가게 철거",
+   "category": "업종별 철거",
+   "cover": "img_17_e31e33e87381.jpg",
+   "title_hint": "옷가게 철거, 진열장·피팅룸·조명 정리 순서",
+   "questions": [
+    "옷가게 철거는 어떤 순서로?",
+    "진열장·행거는?",
+    "피팅룸 가벽은?",
+    "조명·전기는?",
+    "원상복구 범위는?"
+   ],
+   "verify": [],
+   "related_pages": [
+    "/cases/",
+    "/demolition/"
+   ]
+  }
+ ]
+}
