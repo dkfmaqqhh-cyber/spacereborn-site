@@ -78,7 +78,7 @@
   },
   {
    "no": 4,
-   "status": "todo",
+   "status": "done",
    "slug": "closing-business-report-order",
    "keyword": "폐업 신고 순서",
    "category": "폐업 · 지원금",
@@ -98,7 +98,8 @@
    ],
    "related_pages": [
     "/support/"
-   ]
+   ],
+   "published": "2026-11-13"
   },
   {
    "no": 5,
