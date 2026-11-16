@@ -17,7 +17,8 @@ SITE = 'https://onulcheolgeo.kr'
 POSTS_DIR = 'tools/blog/posts'
 CATEGORIES = ['폐업 · 지원금', '원상복구', '비용 · 견적', '업종별 철거', '사무실 철거', '주거 철거', '철거 상식']
 STATIC_URLS = ['/', '/about/', '/support/', '/cases/', '/interior/', '/demolition/', '/info/',
-               '/area/', '/area/seoul/', '/area/gyeonggi/', '/area/incheon/']
+               '/area/', '/area/seoul/', '/area/gyeonggi/', '/area/incheon/',
+               '/area/gangwon/', '/area/chungcheong/', '/area/jeolla/', '/area/gyeongbuk/', '/area/gyeongnam/', '/area/jeju/']
 BANNED = ['최고', '최저가', '업계 1위', '1위', '100%', '보장합니다', '엄선', '맞춤형', '체계적', '완벽', '박시연', '무조건', '최상']
 PHONE_RE = re.compile(r'010[-\s.]?7990[-\s.]?2378|01079902378')
 
