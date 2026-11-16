@@ -4,6 +4,7 @@ import json, os, re, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 TPL = open(os.path.join(ROOT, 'area/incheon/index.html'), encoding='utf-8').read()
 UPDATED = '2026-11-16'
+CITY = {'gangwon': ('강원 철거업체', '강원', [('춘천 철거업체', '춘천시 상가·매장 철거와 사무실 원상복구, 폐업철거를 상담합니다.'), ('원주 철거업체', '원주시 상가철거, 사무실 철거, 임대 매장 원상복구를 상담합니다.'), ('강릉 철거업체', '강릉시 식당·카페 등 매장 철거와 원상복구, 폐업철거를 상담합니다.'), ('속초 · 동해 · 삼척 철거', '동해안 지역 상가 · 숙박 · 매장 철거와 원상복구를 상담합니다.')]), 'chungcheong': ('대전 철거업체', '대전', [('대전 철거업체', '대전 동구·중구·서구·유성구·대덕구 상가철거와 사무실 철거, 원상복구, 폐업철거를 상담합니다.'), ('세종 철거업체', '세종시 상가 · 사무실 철거와 임대 매장 원상복구를 상담합니다.'), ('천안 철거업체', '천안 동남구·서북구 상가철거와 원상복구, 폐업철거를 상담합니다.'), ('청주 철거업체', '청주 상당구·서원구·흥덕구·청원구 상가 · 사무실 철거와 원상복구를 상담합니다.'), ('아산 · 당진 · 서산 철거', '충남 서북부 상가 · 매장 철거와 원상복구, 폐업철거를 상담합니다.')]), 'jeolla': ('광주 철거업체', '광주', [('광주 철거업체', '광주 동구·서구·남구·북구·광산구 상가철거와 사무실 철거, 원상복구, 폐업철거를 상담합니다.'), ('전주 철거업체', '전주 완산구·덕진구 상가 · 매장 철거와 원상복구, 폐업철거를 상담합니다.'), ('순천 · 광양 철거', '순천시 · 광양시 상가철거와 사무실 원상복구를 상담합니다.'), ('여수 · 목포 철거', '여수시 · 목포시 식당 · 카페 등 매장 철거와 원상복구를 상담합니다.'), ('익산 · 군산 철거', '익산시 · 군산시 상가 · 사무실 철거와 폐업철거를 상담합니다.')]), 'gyeongbuk': ('대구 철거업체', '대구', [('대구 철거업체', '대구 중구·동구·서구·남구·북구·수성구·달서구, 달성군·군위군 상가철거와 사무실 철거, 원상복구, 폐업철거를 상담합니다.'), ('포항 철거업체', '포항 남구·북구 상가 · 매장 철거와 원상복구를 상담합니다.'), ('구미 철거업체', '구미시 상가철거, 사무실 철거, 임대 매장 원상복구를 상담합니다.'), ('경산 · 경주 철거', '경산시 · 경주시 식당 · 카페 등 매장 철거와 폐업철거를 상담합니다.'), ('안동 · 김천 · 영주 철거', '경북 북부 상가 · 사무실 철거와 원상복구를 상담합니다.')]), 'gyeongnam': ('부산 철거업체', '부산', [('부산 철거업체', '해운대구 · 부산진구 · 사하구 등 부산 16개 구·군의 상가철거와 사무실 철거, 원상복구, 폐업철거를 상담합니다.'), ('울산 철거업체', '울산 중구·남구·동구·북구, 울주군 상가 · 매장 철거와 원상복구를 상담합니다.'), ('창원 철거업체', '창원 의창구·성산구·마산합포구·마산회원구·진해구 상가철거와 원상복구, 폐업철거를 상담합니다.'), ('김해 · 양산 철거', '김해시 · 양산시 상가 · 사무실 철거와 임대 매장 원상복구를 상담합니다.'), ('진주 · 거제 · 통영 철거', '경남 서부 · 남해안 매장 철거와 원상복구, 폐업철거를 상담합니다.')]), 'jeju': ('제주 철거업체', '제주', [('제주시 철거업체', '제주시 상가철거와 사무실 철거, 식당 · 카페 원상복구, 폐업철거를 상담합니다.'), ('서귀포 철거업체', '서귀포시 상가 · 숙박 · 매장 철거와 원상복구, 폐업철거를 상담합니다.')])}
 
 def g(prefix, names):
     return [f'{prefix} {n}' if prefix else n for n in names]
@@ -56,15 +57,31 @@ def make(r):
     jong = unit.endswith('군')
     eul, euro = ('을', '으로') if jong else ('를', '로')
     url = f"https://onulcheolgeo.kr/area/{r['slug']}/"
+    main, city0, cities = CITY[r['slug']]
+    desc = f"{main}를 찾는다면 오늘의 철거에서 {short} 상가철거·사무실 철거·원상복구·폐업철거를 상담하세요. 무료 방문견적, 점포철거비 지원금 신청 도움, 전자세금계산서 발행, 시공 후 1년 무상 A/S."
+    s = re.sub(r'<meta name="description" content="[^"]*">', f'<meta name="description" content="{desc}">', s)
+    s = re.sub(r'<meta property="og:title" content="[^"]*">', f'<meta property="og:title" content="{main} | {short} 상가철거·원상복구 - 오늘의 철거">', s)
+    s = re.sub(r'<meta property="og:description" content="[^"]*">', f'<meta property="og:description" content="{short} 상가·사무실 철거, 원상복구, 폐업철거 상담. 무료 방문견적, 점포철거비 지원금 신청 도움, 시공 후 1년 무상 A/S.">', s)
     s = rep(s, '<title>인천 철거업체 | 송도·부평·구월 상가·사무실 철거, 원상복구 - 오늘의 철거</title>',
-            f"<title>{short} 철거업체 | {r['hl']} 상가·사무실 철거, 원상복구 - 오늘의 철거</title>")
-    s = rep(s, '인천 전 지역(11개 구·군)', f"{short} 전 지역({n}개 {unit})")
+            f"<title>{main} | {r['hl'] if short == city0 else short} 상가철거·원상복구·폐업철거 - 오늘의 철거</title>")
     s = s.replace('https://onulcheolgeo.kr/area/incheon/', url)
     s = rep(s, '"areaServed": {"@type": "City", "name": "인천광역시"}',
-            '"areaServed": ' + json.dumps({"@type": "AdministrativeArea", "name": r['full']}, ensure_ascii=False))
+            '"areaServed": ' + json.dumps([{"@type": "AdministrativeArea", "name": r['full']}] + [{"@type": "City", "name": c} for c in r['hl'].split('·')], ensure_ascii=False))
     s = rep(s, '인천 11개 구·군 모두 상담합니다. 구·군 이름과', f"{short} {n}개 {unit} 모두 상담합니다. {unit} 이름과", 2)
     s = rep(s, 'INCHEON DEMOLITION', f"{r['en']} DEMOLITION")
-    s = rep(s, '인천 원도심부터 송도 · 청라 · 검단 신도시까지 상가', f"{r['hero']} 상가")
+    s = re.sub(r'<p>인천 원도심부터.*?</p>', lambda m: f"<p>{main}를 찾고 계신가요? 오늘의 철거는 {r['hero']} 상가철거 · 사무실 철거 · 원상복구 · 폐업철거를 상담합니다. 현장을 먼저 보고 작업 범위를 정리한 뒤 견적을 안내해 드립니다.</p>", s, count=1)
+    cards = ''.join(f'<div class="service"><b>{a}</b><p>{b}</p></div>' for a, b in cities)
+    citysec = (f'\n      <div class="sec-head" style="margin-top:56px">\n        <div class="eyebrow">MAJOR CITIES</div>\n'
+               f'        <h2 class="sec-title">{short} 주요 도시 철거업체 안내</h2>\n'
+               f'        <p class="sec-sub">자주 찾으시는 도시별 안내입니다. 목록에 없는 {unit}도 같은 순서로 상담합니다.</p>\n      </div>\n'
+               f'      <div class="services">{cards}</div>')
+    s = rep(s, '</div>\n    </div>\n  </section>\n\n  <section class="section" id="districts">',
+            '</div>' + citysec + '\n    </div>\n  </section>\n\n  <section class="section" id="districts">')
+    fq = f"{city0}에서 상가 철거를 맡기려면 무엇을 보내면 되나요?"
+    fa = f"업종, {unit} 이름, 평수, 현장 사진을 네이버폼이나 카카오 상담으로 보내주세요. 점포철거비(철거지원금)를 받으실 계획이면 철거 전에 신청해야 하니 상담 때 함께 알려주세요."
+    s = rep(s, '   {"@type": "Question", "name": "철거 후 문제가 생기면',
+            '   ' + json.dumps({"@type": "Question", "name": fq, "acceptedAnswer": {"@type": "Answer", "text": fa}}, ensure_ascii=False) + ',\n   {"@type": "Question", "name": "철거 후 문제가 생기면')
+    s = rep(s, '<details><summary>철거 후 문제가 생기면', f'<details><summary>{fq}</summary><p>{fa}</p></details>\n        <details><summary>철거 후 문제가 생기면')
     s = re.sub(r'최종 업데이트 \d{4}-\d{2}-\d{2}', f'최종 업데이트 {UPDATED}', s)
     s = rep(s, '업종, 구·군 이름, 평수', f'업종, {unit} 이름, 평수')
     # 후기: 수도권 현장 후기임을 그대로 밝힌다
@@ -94,7 +111,7 @@ def make(r):
     s = head + '<footer class="site-footer">' + foot
     s = s.replace('@@REVIEWS@@', reviews)
     s = s.replace('<li aria-current="page">'+short+'</li>', '<li aria-current="page">'+short+'</li>')
-    left = [m for m in re.findall(r'.{0,30}(?:인천|incheon|구·군).{0,30}', head)]
+    left = [m for m in re.findall(r'.{0,30}(?:인천|incheon).{0,30}', head)]
     if left:
         sys.exit(f"{r['slug']}: 남은 인천 표현 {left}")
     d = os.path.join(ROOT, 'area', r['slug'])
