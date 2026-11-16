@@ -103,7 +103,7 @@
   },
   {
    "no": 5,
-   "status": "todo",
+   "status": "done",
    "slug": "cafe-closing-demolition",
    "keyword": "카페 폐업 철거",
    "category": "업종별 철거",
@@ -122,7 +122,8 @@
    "related_pages": [
     "/cases/",
     "/support/"
-   ]
+   ],
+   "published": "2026-11-17"
   },
   {
    "no": 6,
