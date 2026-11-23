@@ -151,7 +151,7 @@
   },
   {
    "no": 7,
-   "status": "todo",
+   "status": "done",
    "slug": "choose-demolition-company",
    "keyword": "철거업체 선택",
    "category": "비용 · 견적",
@@ -171,7 +171,8 @@
    "related_pages": [
     "/",
     "/support/"
-   ]
+   ],
+   "published": "2026-11-24"
   },
   {
    "no": 8,
