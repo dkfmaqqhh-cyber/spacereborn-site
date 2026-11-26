@@ -176,7 +176,7 @@
   },
   {
    "no": 8,
-   "status": "todo",
+   "status": "done",
    "slug": "office-moving-restoration",
    "keyword": "사무실 원상복구",
    "category": "사무실 철거",
@@ -195,7 +195,8 @@
    "related_pages": [
     "/demolition/",
     "/area/"
-   ]
+   ],
+   "published": "2026-11-27"
   },
   {
    "no": 9,
